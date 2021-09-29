@@ -74,6 +74,22 @@ p2 = plot([histogram(x = T, opacity=0.75)],Layout(
 
 savefig(p2, "PS1-g2.png")
 
+#Estadisitcas descriptivas (Media, Mínimo, Máximo, Cunatiles =0.25,0.5,0.75)
+
+print("\n Media :  \n")
+print(mean(T))
+print("\n Valor Mínimo : \n")
+print(quantile(T,0))
+print("\n Valor Máximo :  \n")
+print(quantile(T,1))
+print("\n Cuartil Inferior :  \n ")
+print(quantile(T,0.25))
+print("\n Mediana : \n")
+print(quantile(T,0.5))
+print("\n Cuartil superior :  \n")
+print(quantile(T,0.75))
+
+
 ## Exercise 3
 
 inf_beta = 0.9;
